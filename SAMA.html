@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bag Brands</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+      }
+      body {
+        width: 100%;
+        background:rgb(245, 226, 239);
+        /* background:#f4dfc8; */
+        color: #000000;
+        position: relative;
+      }
+      .container,
+      .container2,
+      .container4 {
+        width: 90%;
+        height: 100vh;
+        background: #f3f3f3;
+        border-radius: 20px;
+        overflow: hidden;
+        margin: 20px auto;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+        padding: 20px 0;
+      }
+      nav .logo {
+        color: #000;
+        text-decoration: none;
+        font-size: 28px;
+        letter-spacing: 3px;
+        font-weight: 700;
+      }
+      nav ul li {
+        display: inline-block;
+        margin: 0 6px;
+      }
+      nav ul li a {
+        color: #000;
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: 500;
+      }
+      nav ul li a:hover {
+        color: #f4dfc8;
+      }
+      .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 80%;
+        margin: auto;
+      }
+      .content .text {
+        width: 45%;
+      }
+      .content .text h2 {
+        font-size: 40px;
+        font-weight: 700;
+      }
+      .content .text p {
+        font-size: 18px;
+        line-height: 25px;
+        margin: 10px;
+        letter-spacing: 1px;
+      }
+      .content .image {
+        width: 45%;
+      }
+      .content .image img {
+        width: 100%;
+      }
+
+      /* 222222222222222222222222222222222222 */
+
+      section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 2em;
+      }
+
+      .product {
+        background-color: #f3f3f3;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin: 1em;
+        padding: 1em;
+        width: 300px;
+        box-sizing: border-box;
+        border-radius: 20px;
+      }
+      .product img {
+        width: 280px;
+        height: 280px;
+      }
+      .product p {
+        padding: 5px;
+      }
+      .product button {
+        width: 100px;
+        height: 35px;
+        margin: 10px auto;
+        border-radius: 20px;
+        border-style: none;
+      }
+      /* 4444444444444444444444444444444444444444444444 */
+      .container4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      form {
+        color: #000;
+        width: 80%;
+        margin: 2em auto;
+        background-color: #fff;
+        padding: 2em;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 0.5em;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 0.5em;
+        margin-bottom: 1em;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #333;
+        color: #fff;
+        padding: 0.5em 1em;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #555;
+      }
+
+      footer {
+        background-color: #000;
+        color: #fff;
+        /* text-align: center; */
+        padding: 1em 0;
+        /* position: absolute; */
+        /* bottom: 0; */
+        width: 100%;
+        display: flex;
+       justify-content: space-around;
+       margin: auto;
+      }
+      .f1{
+width:5%;
+      }
+      .f2{
+width:80%;
+
+      }
+      .f2{
+width:10%;
+      }
+
+
+
+
+
+
+
+
+    /* ////////////////////////////////////Responsive//////////////////////////////////// */
+
+    @media (max-width: 480px) {
+        .container2,
+        .container {
+          height: auto;
+          width: 100%;
+        }
+
+        .content {
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .content .text h2 {
+          font-size: 22px;
+          padding: 15px;
+        }
+        .content .text p {
+          font-size: 15px;
+        }
+
+        .content .image,
+        .content .text {
+          width: 80%;
+        }
+        ul {
+          display: none;
+        }
+        footer{
+          width: 250px ;
+          display: flex;
+          flex-direction: column;
+          height: auto;
+          padding: 25px;
+        }
+        .f1,.f2,.f3{
+        width: auto;
+        }
+      }
+
+    /* //////////////////////////////////////////////////////////////////////// */
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <a href="#" class="logo"> Bag Brands</a>
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#product">PRODUCT</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="content">
+        <div class="text">
+          <h2>SAMA STORE , Best Affordable Bag Brands</h2>
+          <p>
+            This website will show some of famous and known brands that knowdays
+            high-priced but in my website high quality with affordable price.
+          </p>
+        </div>
+
+        <div class="image">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/guest-is-seen-outside-chloe-show-wearing-black-sunnies-news-photo-1697634684.jpg?crop=0.668xw:1.00xh;0.173xw,0&resize=980:*"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- 2222222222222222222222222222 -->
+    <div class="container2" id="about">
+      <div class="content">
+        <div class="text">
+          <h2>ABOUT US</h2>
+          <p>
+             My website contain and show  some bags that people willing to  but its price
+             stop them ,so now people can buy this bags with affordable and low price,its a new store
+             and with your support there will be more and more bags that people willing to buy with 
+             affordable price , you will just have to see the bags and the bag you want add to cart 
+             then your name,email,messege. In this messege you can tell me the bag that you wanna afford
+             and it's not yet there so I can help you afford it with a good quality and price.
+          </p>
+        </div>
+
+        <div class="image">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/kathrin-bommann-wearing-vival-cardigan-loulou-studio-pants-news-photo-1682086697.jpg?crop=0.660xw:1.00xh;0.202xw,0&resize=1200:*"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- 333333333333333333333333333333333 -->
+    <section>
+      <div class="product" id="product">
+        <img
+          src="https://hips.hearstapps.com/hmg-prod/images/prada-cleo-bag-1660056287.jpg?crop=1xw:1xh;center,top&resize=980:*"
+        />
+        <h2>Prada</h2>
+        <p>Stylish, Comfortable, Knee-Hi.</p>
+        <p>450LE</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img
+          src="https://hips.hearstapps.com/hmg-prod/images/givenchy-bag-6489799fb332b.jpg?crop=1xw:1xh;center,top&resize=980:*"
+          alt="STRUT"
+        />
+        <h2>Givenchy</h2>
+        <p>Stylish, Comfortable, STRUT.</p>
+        <p>500 LE</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img
+          src="https://hips.hearstapps.com/hmg-prod/images/dior-bag-1623678623.jpg?crop=0.984xw:1.00xh;0.0155xw,0&resize=980:*"
+          alt="Stiletto"
+        />
+        <h2>Dior</h2>
+        <p>Stylish, Comfortable, STRUT..</p>
+        <p>230 LE</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img
+          src="https://hips.hearstapps.com/hmg-prod/images/gucci-bag-1660055582.jpg?crop=1xw:1xh;center,top&resize=980:*"
+          alt="PUMP"
+        />
+        <h2>Gucci</h2>
+        <p>Stylish, Comfortable, STRUT..</p>
+        <p>600 LE</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img
+          src="https://hips.hearstapps.com/hmg-prod/images/dolce-bag-1669134859.jpg?crop=1xw:1xh;center,top&resize=980:*"
+          alt="Best Kept Secret"
+        />
+        <h2>Dolce & Gabbana</h2>
+        <p>Stylish, Comfortable, STRUT..</p>
+        <p>250 LE</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img
+          src="https://hips.hearstapps.com/hmg-prod/images/ferragamo-bag-64897a9cc3aaf.jpg?crop=1xw:1xh;center,top&resize=980:*"
+          alt="Catwalk"
+        />
+        <h2>Ferragamo</h2>
+        <p>Stylish, Comfortable, STRUT..</p>
+        <p>300LE</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img
+          src="https://hips.hearstapps.com/hmg-prod/images/jw-anderson-bumper-bag-652fb31889fcf.jpg?crop=1xw:1xh;center,top&resize=980:*"
+          alt="PUMP"
+        />
+        <h2>JW Anderson</h2>
+        <p>Stylish, Comfortable,STRUT..</p>
+        <p>330 LE</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img
+          src="https://hips.hearstapps.com/hmg-prod/images/birkin-bag-652fd253e7cdb.jpg?crop=1xw:1xh;center,top&resize=980:*"
+          alt="WhereWhen"
+        />
+        <h2>Hermès</h2>
+        <p>Stylish, Comfortable,STRUT..</p>
+        <p>400 LE</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img
+          src="https://hips.hearstapps.com/hmg-prod/images/mcqueen-bag-652fd6c286d02.jpg?crop=1xw:1xh;center,top&resize=980:*"
+          alt="Solina"
+        />
+        <h2>Alexander McQueen</h2>
+        <p>Stylish, Comfortable,STRUT..</p>
+        <p>350 LE</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img
+          src="https://hips.hearstapps.com/hmg-prod/images/apc-bag-1626340295.jpg?crop=1xw:1xh;center,top&resize=980:*"
+          alt="Catwalk"
+        />
+        <h2>APC</h2>
+        <p>Stylish, Comfortable,STRUT..</p>
+        <p>600 LE</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img
+          src="https://hips.hearstapps.com/hmg-prod/images/acne-studios-bag-64bfe6ecad2b8.jpg?crop=1xw:1xh;center,top&resize=980:*"
+          alt="WhereWhen"
+        />
+        <h2>Acne Studios</h2>
+        <p>Stylish, Comfortable,STRUT..</p>
+        <p>250 LE</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img
+          src="https://hips.hearstapps.com/hmg-prod/images/burberry-bag-653fbc851e83f.jpg?crop=1xw:1xh;center,top&resize=980:*"
+          alt="Slipper"
+        />
+        <h2>Burberry</h2>
+        <p>Stylish, Comfortable,STRUT..</p>
+        <p>100 LE</p>
+        <button>Add to Cart</button>
+      </div>
+    </section>
+    <!-- 4444444444444444444444444444444 -->
+    <div class="container4" id="contact">
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <footer>
+
+      <p class="f1">
+<h2>SAMA STORE</h2>
+      </p>
+      <p class="f2">
+        WAITING,<br>
+         FOR <br> YOUR  <br>
+        SUPPORT. <br>
+      </p>
+      <p class="f3">
+<ul>
+  <li>facebook</li>
+  <li>instagram</li>
+  <li>twitter</li>
+  <li>whatsapp</li>
+</ul>
+      </p>
+
+    </footer>
+  </body>
+</html>
